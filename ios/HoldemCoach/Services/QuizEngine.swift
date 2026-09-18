@@ -113,13 +113,13 @@ enum QuizFactory {
             id: UUID(),
             kind: .potOdds,
             prompt: prompt,
-            detail: "Break-even equity ≈ \(String(format: \"%.1f\", needed))%. Rule of thumb: outs × 2% for one street.",
+            detail: "Break-even equity ≈ \(String(format: "%.1f", needed))%. Rule of thumb: outs × 2% for one street.",
             cards: [],
             choices: choices,
             correctIndex: correct,
             explanation: shouldCall
-                ? "Your ~\(Int(equity))% equity clears the \(String(format: \"%.1f\", needed))% ask — calling is +EV on pot odds alone."
-                : "You need ~\(String(format: \"%.1f\", needed))% but only have ~\(Int(equity))% — folding is correct on pot odds alone."
+                ? "Your ~\(Int(equity))% equity clears the \(String(format: "%.1f", needed))% ask — calling is +EV on pot odds alone."
+                : "You need ~\(String(format: "%.1f", needed))% but only have ~\(Int(equity))% — folding is correct on pot odds alone."
         )
     }
 
